@@ -49,6 +49,8 @@
                 "./scripts/fixnetwork.ps1",
                 "./scripts/rearm-windows.ps1",
                 "./scripts/disable-screensaver.ps1",
+                "./scripts/disable-winrm.ps1",
+                "./scripts/enable-winrm.ps1",
                 "./scripts/microsoft-updates.bat",
                 "./scripts/win-updates.ps1",
                 "./scripts/unattend.xml",
