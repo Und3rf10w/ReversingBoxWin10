@@ -121,6 +121,7 @@
             "remote_path": "/tmp/script.bat",
             "scripts": [
                 "./scripts/compile-dotnet-assemblies.bat",
+                "./scripts/set-winrm-automatic.bat",
                 "./scripts/dis-updates.bat"
             ],
             "type": "windows-shell"
