@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
 
 config.vm.define "win10" do |cfg|
-  cfg.vm.box = "cyberdefenders/win10"
+  cfg.vm.box = "und3rf10w/win10"
   cfg.vm.hostname = "win10"
   cfg.vm.boot_timeout = 1200
   cfg.vm.communicator = "winrm"
