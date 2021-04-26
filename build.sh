@@ -326,7 +326,7 @@ build_packer_boxes() {
 }
 
 build_vagrant_hosts() {
-  LAB_HOSTS=("win10")
+  LAB_HOSTS=("win10-reversing")
 
   # Vagrant up each box and attempt to reload one time if it fails
   for VAGRANT_HOST in "${LAB_HOSTS[@]}"; do
