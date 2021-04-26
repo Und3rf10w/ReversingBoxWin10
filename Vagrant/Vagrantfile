@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.define "win10-reversing" do |cfg|
-    cfg.vm.box = "und3rf10w/win10-reversing"
+    cfg.vm.box = "cyberdefenders/win10"
     cfg.vm.hostname = "reversing"
     cfg.vm.boot_timeout = 1200
     cfg.vm.communicator = "winrm"
@@ -17,12 +17,14 @@ Vagrant.configure("2") do |config|
     cfg.vm.provision "shell", path: "scripts/download_palantir_wef.ps1", privileged: false
     cfg.vm.provision "shell", inline: 'wevtutil el | Select-String -notmatch "Microsoft-Windows-LiveId" | Foreach-Object {wevtutil cl "$_"}', privileged: false
     cfg.vm.provision "shell", path: "scripts/install-utilities.ps1", privileged: false
-    cfg.vm.provision "shell", path: "scripts/install-redteam.ps1", privileged: false
     cfg.vm.provision "shell", path: "scripts/install-choco-extras.ps1", privileged: false
-    cfg.vm.provision "shell", path: "scripts/install-osquery.ps1", privileged: false
     cfg.vm.provision "shell", path: "scripts/install-sysinternals.ps1", privileged: false
-    cfg.vm.provision "shell", path: "scripts/install-velociraptor.ps1", privileged: false
-    cfg.vm.provision "shell", path: "scripts/install-autorunstowineventlog.ps1", privileged: false
+    cfg.vm.provision "shell", path: "scripts/install-windbg.ps1", privileged: false
+    cfg.vm.provision "shell", path: "scripts/install-x64dbg.ps1", privileged: false
+    cfg.vm.provision "shell", path: "scripts/install-pebear.ps1", privileged: false
+    cfg.vm.provision "shell", path: "scripts/install-010editor.ps1", privileged: false
+    cfg.vm.provision "shell", path: "scripts/install-dnSpy.ps1", privileged: false
+    cfg.vm.provision "shell", path: "scripts/install-ida-free.ps1", privileged: false
     cfg.vm.provision "enable-public-winrm", type: "shell", path: "scripts/enable-winrm.ps1", privileged: false
     cfg.vm.provision "shell", inline: 'cscript c:\windows\system32\slmgr.vbs /dlv', privileged: false
   

@@ -230,11 +230,6 @@ move_boxes() {
     (echo >&2 "Windows 10 box is missing from the Boxes directory. Qutting.")
     exit 1
   fi
-  # Ensure Windows 2016 box exists
-  if [ ! -f "$DL_DIR"/Boxes/windows_2016_"$PACKER_PROVIDER".box ]; then
-    (echo >&2 "Windows 2016 box is missing from the Boxes directory. Qutting.")
-    exit 1
-  fi
 }
 
 # Brings up a single host using Vagrant
@@ -371,7 +366,6 @@ main() {
   # Build and Test Vagrant hosts if this isn't a Packer-only build
   if [ "$PACKER_ONLY" -eq 0 ]; then
     build_vagrant_hosts
-    post_build_checks
   fi
 }
 
