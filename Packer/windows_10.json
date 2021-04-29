@@ -17,7 +17,7 @@
                 "./scripts/unattend.xml",
                 "./scripts/sysprep.bat"
             ],
-            "guest_os_type": "windows9-64",
+            "guest_os_type": "windows9_64Guest",
             "headless": true,
             "iso_checksum": "{{user `iso_checksum_type`}}:{{user `iso_checksum`}}",
             "iso_url": "{{user `iso_url`}}",
@@ -57,7 +57,7 @@
                 "./scripts/sysprep.bat"
             ],
             "guest_additions_mode": "disable",
-            "guest_os_type": "Windows81_64",
+            "guest_os_type": "Windows10_64",
             "headless": true,
             "iso_checksum": "{{user `iso_checksum_type`}}:{{user `iso_checksum`}}",
             "iso_url": "{{user `iso_url`}}",
