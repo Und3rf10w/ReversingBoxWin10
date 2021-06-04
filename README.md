@@ -14,5 +14,6 @@ Tools added:
   - windbg (broken, will require manual install)
   - sysmon, with SwiftOnSecurity extensions
   - yara
+  - Detect It Easy
 
 Build with `./build.sh`
