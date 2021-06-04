@@ -16,5 +16,7 @@ Tools added:
   - yara
   - Detect It Easy
   - pestudio
+  - python3
+  - pywin32
 
 Build with `./build.sh`
