@@ -18,5 +18,6 @@ Tools added:
   - pestudio
   - python3
   - pywin32
+  - BurpSuite Free
 
 Build with `./build.sh`
