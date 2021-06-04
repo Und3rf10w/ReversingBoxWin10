@@ -13,5 +13,6 @@ Tools added:
   - 010 editor
   - windbg (broken, will require manual install)
   - sysmon, with SwiftOnSecurity extensions
+  - yara
 
 Build with `./build.sh`
