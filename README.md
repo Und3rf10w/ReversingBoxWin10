@@ -12,5 +12,6 @@ Tools added:
   - sublime text 3
   - 010 editor
   - windbg (broken, will require manual install)
+  - sysmon, with SwiftOnSecurity extensions
 
 Build with `./build.sh`
