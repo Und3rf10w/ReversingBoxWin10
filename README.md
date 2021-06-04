@@ -15,5 +15,6 @@ Tools added:
   - sysmon, with SwiftOnSecurity extensions
   - yara
   - Detect It Easy
+  - pestudio
 
 Build with `./build.sh`
