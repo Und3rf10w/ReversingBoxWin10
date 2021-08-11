@@ -9,7 +9,7 @@ Tools added:
   - ghidra
   - pebear
   - dnspy
-  - sublime text 3
+  - sublime text 4
   - 010 editor
   - windbg (broken, will require manual install)
   - sysmon, with  Olaf Hartongs' extensions
