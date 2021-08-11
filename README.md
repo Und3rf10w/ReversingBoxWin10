@@ -19,5 +19,7 @@ Tools added:
   - python3
   - pywin32
   - BurpSuite Free
+  - Process Hacker
+  - vscode
 
 Build with `./build.sh`
