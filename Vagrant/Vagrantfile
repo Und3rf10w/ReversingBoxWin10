@@ -25,6 +25,7 @@ Vagrant.configure("2") do |config|
     # cfg.vm.provision "shell", path: "scripts/install-windbg.ps1", privileged: false
     cfg.vm.provision "shell", path: "scripts/install-x64dbg.ps1", privileged: false
     cfg.vm.provision "shell", path: "scripts/install-processhacker.ps1", privileged: false
+    cfg.vm.provision "shell", path: "scripts/install-dotnet35.ps1", privileged: false
     cfg.vm.provision "shell", path: "scripts/install-vscode.ps1", privileged: false
     cfg.vm.provision "shell", path: "scripts/install-pebear.ps1", privileged: false
     cfg.vm.provision "shell", path: "scripts/install-010editor.ps1", privileged: false
