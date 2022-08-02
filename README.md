@@ -23,3 +23,6 @@ Tools added:
   - vscode
 
 Build with `./build.sh`
+
+# Credits
+Adapted from: [DetectionLabElk](https://github.com/cyberdefenders/DetectionLabELK) and [DetectionLab](https://github.com/clong/DetectionLab)
